@@ -30,9 +30,10 @@ public class Main {
 
 		// 循环寻找
 		for (int i = 1; i < arrayLength; i++) {
-			if (times == 0)
+			if (times == 0) {
 				result = numbers[i];
-			else if (result == numbers[i])
+				times = 1;
+			} else if (result == numbers[i])
 				times++;
 			else
 				times--;
